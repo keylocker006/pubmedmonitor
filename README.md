@@ -1,6 +1,6 @@
 # PubMed Research Monitor
 
-A mobile Android app built with **Kivy** that monitors recent PubMed publications for specific medical/research keywords, fetches metadata, and automatically downloads open-access PDFs to your device's Downloads folder.
+A mobile Android app built with **Kivy** that searches recent PubMed publications for specific medical/research keywords, fetches metadata, and automatically downloads open-access PDFs to your device's Downloads folder.
 
 ## Features
 
@@ -70,18 +70,18 @@ Edit `pubmed_monitor.py` for defaults:
    [app]
    title = PubMed Research Monitor
    package.name = pubmedmonitor
-   package.domain = org.test
+   package.domain = org.test (this is the default option if you do not have a domain, otherwise use your domain)
    source.dir = .
    source.include_exts = py,png,jpg,kv,atlas
    version = 1.0
    requirements = python3, kivy, requests, urllib3, openssl, androidstorage4kivy
-   orientation = portrait, landscape
+   orientation = portrait
    fullscreen = 0
 
    # Android permissions (for storage)
-   android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE
+   android.permissions = INTERNET, ACCESS_NETWORK_STATE, WRITE_EXTERNAL_STORAGE
    android.api = 36
-   android.minapi = 30
+   android.minapi = 30 (***30 is the lowest that Google Play Store supports***)
    ```
 
    
@@ -126,6 +126,8 @@ For full Buildozer documentation: [https://buildozer.readthedocs.io/]
 ## License
 
 This project is for personal/research use. 
+
+MIT LICENSE
 
 ---
 
