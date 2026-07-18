@@ -1,3 +1,15 @@
+
+***This is a personal project. I realize there are improvements that could be implemented, I am currently working on improving this app. If you have improvements you would like to share, you are free to fork this project. 
+
+I decided to build this app because I was tired of searching for scientific studies blindly. 
+
+If I like the improvement, I will merge them into the main branch.
+
+Happy Coding 👨‍💻🖥️***
+
+
+
+
 # PubMed Research Monitor
 
 A mobile Android app built with **Kivy** that searches recent PubMed publications for specific medical/research keywords, fetches metadata, and automatically downloads open-access PDFs to your device's Downloads folder.
@@ -131,4 +143,4 @@ MIT LICENSE
 
 ---
 
-**Happy Researching!** 🧬
+**Happy Researching!** 🧬🔬
